@@ -1,4 +1,4 @@
-# Custom_MIPS_Processor_using_VHDL
+# Custom_MIPS_Processor_using_VHDL_with_RC5
 ## Specification Sheet
 The processor comprises the following components:
 
