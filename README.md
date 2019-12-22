@@ -1,5 +1,5 @@
-# Custom_MIPS_Processor_using_HHDL
-Specification Sheet
+# Custom_MIPS_Processor_using_VHDL
+## Specification Sheet
 The processor comprises the following components:
 
 ● Program counter (PC) register: This is a 32 -bit register that contains the address of the next instruction to be executed by the processor.
