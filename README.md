@@ -1,4 +1,4 @@
-# Custom_MIPS_Processor_using_VHDL_with_RC5
+# Custom_MIPS_Processor_using_VHDL_with_RC5_Cipher
 
 
 ### Video Link : https://youtu.be/TCuIPBlUtqk
