@@ -275,7 +275,7 @@ port map (
     
 );
 
-InstrMem_i : InstrMem
+InstrMem_i : InstrMem 
 port map(
     a           => PC_temp,
     rd          => rd_temp,
