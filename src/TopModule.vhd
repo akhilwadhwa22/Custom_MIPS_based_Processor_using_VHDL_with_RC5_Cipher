@@ -86,7 +86,7 @@ component InstrMem is
   state : s_type
   );
 
-end component InstrMem;
+end component InstrMem ;
 
 component mux_alu
 port(x,y : in STD_LOGIC_VECTOR(31 downto 0);
