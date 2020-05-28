@@ -2,7 +2,7 @@
 ![](https://github.com/akhilwadhwa22/Custom_MIPS_based_Processor_using_VHDL_with_RC5_Cipher/blob/master/Processor.png)
 
 
-### Video Link : https://youtu.be/TCuIPBlUtqk
+### In Action : https://youtu.be/TCuIPBlUtqk
 
 ## Specification Sheet
 The processor comprises the following components:
