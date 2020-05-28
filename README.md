@@ -1,5 +1,5 @@
 # Custom_MIPS_Processor_using_VHDL_with_RC5_Cipher
-![]()
+![](https://github.com/akhilwadhwa22/Custom_MIPS_based_Processor_using_VHDL_with_RC5_Cipher/blob/master/Processor.png)
 
 
 ### Video Link : https://youtu.be/TCuIPBlUtqk
