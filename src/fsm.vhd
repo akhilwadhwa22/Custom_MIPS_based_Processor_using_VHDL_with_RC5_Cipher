@@ -34,14 +34,14 @@ use work.state_pkg.all;
 
 entity fsm is
  Port ( clk : in std_logic;
-        reset : in std_logic;
-        key_vld : in std_logic;
-        din : in std_logic_vector(63 downto 0);
-        din_vld : std_logic;
-        dout : out std_logic_vector(63 downto 0);
-        key_in : in std_logic_vector(127 downto 0);
-        again : in std_logic;
-        enc : in std_logic
+        reset :     in std_logic;
+        key_vld :   in std_logic;
+        din :       in std_logic_vector(63 downto 0);
+        din_vld :   std_logic;
+        key_in :    in std_logic_vector(127 downto 0);
+        again :     in std_logic;
+        enc :       in std_logic;
+        dout :      out std_logic_vector(63 downto 0)
         );
 end fsm;
 
