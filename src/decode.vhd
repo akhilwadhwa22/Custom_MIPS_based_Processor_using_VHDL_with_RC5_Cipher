@@ -33,15 +33,15 @@ end DecodeUnit;
 
 architecture Behavioral of DecodeUnit is
 
-	SIGNAL MemtoRegS: STD_LOGIC 	:= '0';
-	SIGNAL MemWriteS: STD_LOGIC 	:= '0';
-	SIGNAL BranchS:  STD_LOGIC 	:= '0';
-	SIGNAL ALUControlS		: STD_LOGIC_VECTOR(3 downto 0);
-	SIGNAL ALUsrcS: STD_LOGIC 	:= '0';
-	SIGNAL RegDstS: STD_LOGIC 	:= '0';
-	SIGNAL RegWriteS: STD_LOGIC 	:= '0';
-	SIGNAL jmpS: STD_LOGIC 		:= '0';
-	SIGNAL halts: STD_LOGIC		:='0';
+SIGNAL MemtoRegS: STD_LOGIC 	:= '0';
+SIGNAL MemWriteS: STD_LOGIC 	:= '0';
+SIGNAL BranchS:  STD_LOGIC 	:= '0';
+SIGNAL ALUControlS		: STD_LOGIC_VECTOR(3 downto 0);
+SIGNAL ALUsrcS: STD_LOGIC 	:= '0';
+SIGNAL RegDstS: STD_LOGIC 	:= '0';
+SIGNAL RegWriteS: STD_LOGIC 	:= '0';
+SIGNAL jmpS: STD_LOGIC 		:= '0';
+SIGNAL halts: STD_LOGIC		:= '0';
 
 begin
 Process(opcode, func)
