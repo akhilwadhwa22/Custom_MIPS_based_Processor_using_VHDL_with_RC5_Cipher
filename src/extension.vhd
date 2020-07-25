@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: NYU Wireless
--- Engineer: Siddharth Murali
--- 
--- Create Date: 11/16/2019 05:35:19 PM
--- Design Name: 
--- Module Name: SignExtend - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -34,11 +13,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity SignExtend is
   Port ( 
   
-  SignImm : out STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-  SignImm_left : out STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-  SignIn : in STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-  BranchCtrl : in STD_LOGIC;
-  JumpCtrl : in STD_LOGIC
+  SignImm       : out STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+  SignImm_left  : out STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+  SignIn        : in STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+  BranchCtrl    : in STD_LOGIC;
+  JumpCtrl      : in STD_LOGIC
   );
 end SignExtend;
 
