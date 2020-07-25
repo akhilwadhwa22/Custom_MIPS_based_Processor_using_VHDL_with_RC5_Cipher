@@ -47,31 +47,32 @@ begin
 Process(opcode, func)
 BEGIN
 IF(opcode = "000000")	THEN	
-	ALUSrcS <= '0';
-	MemtoRegS <= '0';
-	MemWriteS <= '0';
-	BranchS <= '0';
-	RegWriteS <= '1';
-	RegDstS <= '1';
-	jmpS <='0';
-	halts<='0';
+	ALUSrcS	 		<= '0';
+	MemtoRegS 		<= '0';
+	MemWriteS 		<= '0';
+	BranchS 		<= '0';
+	RegWriteS 		<= '1';
+	RegDstS 		<= '1';
+	jmpS 			<= '0';
+	halts			<= '0';
 
 	IF(func = "010010") THEN
-		ALUControlS <= "0000";     --AND
+		ALUControlS 	<= "0000";     --AND
 	ELSIF(func = "010011") THEN
-		ALUControlS <= "0001";     --OR
+		ALUControlS 	<= "0001";     --OR
 	ELSIF(func = "010100") THEN
-		ALUControlS <= "0010";      --NOR
+		ALUControlS 	<= "0010";      --NOR
 	ELSIF(func = "010000") THEN
-		ALUControlS <= "0011";     --ExOR-LEFT
+		ALUControlS 	<= "0011";     --ExOR-LEFT
 	ELSIF(func = "010001") THEN
-		ALUControlS <= "0100";      --RIGHT-EXOR
+		ALUControlS 	<= "0100";      --RIGHT-EXOR
 	ELSIF(func = "010101") THEN
-		ALUControlS <= "0101";     ---LEFT ROTATE -ADD
+		ALUControlS 	<= "0101";     ---LEFT ROTATE -ADD
 	ELSIF(func = "010110") THEN
-		ALUControlS <= "0110";     ---SUB-RIGHT		
+		ALUControlS 	<= "0110";     ---SUB-RIGHT		
 	END IF;
-ELSE      -------   RegDstS is '1' when Instruction is I type '0' otherwise
+ELSE      
+	-------   RegDstS is '1' when Instruction is I type '0' otherwise
 	IF(opcode = "000011") THEN
 		ALUControlS 	<= "0000";   ----ANDI
 		RegDstS 	<= '0';
