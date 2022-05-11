@@ -75,7 +75,7 @@ dataout1: OUT STD_LOGIC_VECTOR(31 DOWNTO 0); --32-bit data out);
 dataout2: OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 regfile1 : OUT STD_LOGIC_VECTOR(31 downto 0);
 regfile2 : OUT STD_LOGIC_VECTOR(31 downto 0)); --32-bit data out);
-END component RAM;
+end component RAM;
 
 
 component InstrMem is
